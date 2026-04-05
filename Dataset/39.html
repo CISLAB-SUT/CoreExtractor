@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#" id="top">
+<head>
+<meta charset="utf-8" /><script type="c566ae2d385892744e10c0bd-text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"9edcce528a",applicationID:"1102021272"};;/*! For license information please see nr-loader-rum-1.248.0.min.js.LICENSE.txt */
+(()=>{var e,t,n={234:(e,t,n)=>{"use strict";n.d(t,{P_:()=>h,Mt:()=>m,C5:()=>s,DL:()=>w,OP:()=>j,lF:()=>R,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>A,sU:()=>T});var r=n(8632),i=n(9567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a);const n=(0,r.ek)(e);n&&(n.info=o[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=n(7056),l=n(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},g={},p="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(p);if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function v(e,t){if(!e)throw new Error(p);g[e]=(0,i.D)(t,f());const n=(0,r.ek)(e);n&&(n.init=g[e])}function m(e,t){if(!e)throw new Error(p);var n=h(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b);const n=(0,r.ek)(e);n&&(n.loader_config=y[e])}const _=(0,r.mF)().o;var x=n(385),D=n(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},E={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function T(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,k);const n=(0,r.ek)(e);n&&(n.runtime=E[e])}function R(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{"use strict";n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let o in a)if(void 0!==e[o])try{Array.isArray(e[o])&&Array.isArray(t[o])?n[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{"use strict";n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const r="1.248.0",i="PROD",a="CDN"},385:(e,t,n)=>{"use strict";n.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>r,ux:()=>c,v6:()=>i,w1:()=>u});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=(a?.document?.readyState,Boolean("hidden"===a?.document?.visibilityState)),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),d=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,n)=>{"use strict";n.d(t,{w:()=>a});var r=n(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{"use strict";n.d(t,{L:()=>d,R:()=>c});var r=n(8325),i=n(1284),a=n(4322),o=n(3325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};u(e),s[e].get(t)||s[e].set(t,n)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var s=n.backlog[t],c=o[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete o[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,n)=>{"use strict";n.d(t,{A:()=>c,ee:()=>u});var r=n(8632),i=n(2210),a=n(234);class o{constructor(e){this.contextId=e}}var s=n(3117);const c="nr@context:".concat(s.a),u=function e(t,n){var r={},s={},d={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(u.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var o=p(r),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,r.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,n)=>{"use strict";n.d(t,{E:()=>r,p:()=>i});var r=n(8325).ee.get("handle");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{"use strict";n.d(t,{X:()=>a});var r=n(5546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function o(e,t,n,i,a){a||(a="feature"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},3239:(e,t,n)=>{"use strict";n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},3117:(e,t,n)=>{"use strict";n.d(t,{a:()=>r});const r=(0,n(4402).Rl)()},4402:(e,t,n)=>{"use strict";n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++n).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return o.join("")}},7056:(e,t,n)=>{"use strict";n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r="NRBA",i=144e5,a=18e5},7894:(e,t,n)=>{"use strict";function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{"use strict";function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2825:(e,t,n)=>{"use strict";n.d(t,{N:()=>d,T:()=>l});var r=n(8325),i=n(5546),a=n(3325),o=n(385);const s="newrelic";const c={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},u=new Set;function d(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,r]=e;c[t]?c[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),l[t]=Boolean(r)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{o._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,n)=>{"use strict";n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{"use strict";n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{"use strict";n.d(t,{P:()=>a});var r=n(8325);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{"use strict";n.d(t,{KB:()=>o,b2:()=>a});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,r.bP)("load",e,t)}function o(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{"use strict";n.d(t,{EZ:()=>d,ce:()=>a,ek:()=>u,fP:()=>o,gG:()=>l,h5:()=>c,mF:()=>s});var r=n(7894),i=n(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let n=o();n.initializedAgents??={},t.initializedAt={ms:(0,r.z)(),date:new Date},n.initializedAgents[e]=t}function u(e){let t=o();return t.initializedAgents?.[e]}function d(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,n)=>{"use strict";n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{"use strict";n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const r=n(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{"use strict";n.d(t,{t:()=>r});const r=n(3325).D.pageViewEvent},9251:(e,t,n)=>{"use strict";n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{"use strict";n.d(t,{W:()=>i});var r=n(8325);class i{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=r.ee.get(e),this.featureName=n,this.blocked=!1}}},7530:(e,t,n)=>{"use strict";n.d(t,{j:()=>b});var r=n(3325),i=n(234),a=n(5546),o=n(8325),s=n(7894),c=n(8e3),u=n(3960),d=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var h=n(2825);const v=e=>{const t=e.startsWith("http");e+="/",n.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:D=!0}=t;const k=(0,g.gG)();A||(w=k.init,A=k.info,_=k.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,_||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,A);const E=(0,i.P_)(e.agentIdentifier),j=[A.beacon,A.errorBeacon];m||(E.proxy.assets&&(v(E.proxy.assets),j.push(E.proxy.assets)),E.proxy.beacon&&j.push(E.proxy.beacon),p(),(0,g.EZ)("activatedFeatures",h.T)),x.denyList=[...E.ajax.deny_list||[],...E.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,x),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,r.D.metrics,p);const n=Object.values(r.D);if(void 0===e)e=n;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!n.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(n));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,a.p)(f.xS,["API/recordReplay/called"],void 0,r.D.metrics,p),(0,a.p)("recordReplay",[],void 0,r.D.sessionReplay,p)},g.pauseReplay=function(){(0,a.p)(f.xS,["API/pauseReplay/called"],void 0,r.D.metrics,p),(0,a.p)("pauseReplay",[],void 0,r.D.sessionReplay,p)},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,o="function"==typeof t;return(0,a.p)(f.xS,["API/createTracer/called"],void 0,r.D.metrics,p),(0,a.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],n),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function _(){n.e(75).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},d.il?(0,u.b2)((()=>_()),!0):_(),g}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=D),m=!0}},1926:(e,t,n)=>{n.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,n)=>{"use strict";n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum-1.248.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.248.0.PROD:",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=n,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),s.integrity=i.sriHashes[o],s.crossOrigin="anonymous"),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",i.sriHashes={75:"sha512-5mWtMwj7hrXT5aUkfvBtjH6FJXsR+zdeMBfc721nzrOx36xa23yTrCB1VVOAQa+zIioAbWPW4m7UsPp7hW1WPw=="},(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&("load"===n.type?"missing":n.type),o=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,a,[o,s,c]=n,u=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);u<o.length;u++)a=o[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self["webpackChunk:NRBA-1.248.0.PROD"]=self["webpackChunk:NRBA-1.248.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";i(1926);var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The page action feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The js errors feature is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}recordReplay(){(0,e.Z)("Call to agent api recordReplay failed. The agent is not currently initialized.")}pauseReplay(){(0,e.Z)("Call to agent api pauseReplay failed. The agent is not currently initialized.")}}var n=i(3325),r=i(234);const a=Object.values(n.D);function o(e){const t={};return a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,n){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const n=l.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,d.b2)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,n),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,n){t[e]=b(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,v.D)(n,(function(e,t){if("count"!==e){var r=o[e],i=n[e];i&&!i.c?o[e]=b(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=b(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=w(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),D=i(4351);var k=i(5546),E=i(7956),j=i(3239),T=i(7894),R=i(9251);class S extends f{static featureName=R.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,n),l.il&&((0,E.N)((()=>(0,k.p)("docHidden",[(0,T.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,k.p)("winPagehide",[(0,T.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class C extends f{static featureName=I.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=n,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(n,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){try{const t=o(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),r.forEach((r=>{if(t[r.featureName]||r.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(r.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,_.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,S,C],loaderType:"lite"})})()})();</script>
+<link rel="shortlink" href="https://www.kbr.com/en" />
+<link rel="canonical" href="https://www.kbr.com/en" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/kbrcom/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.kbr.com/en" />
+<title>KBR | Delivering Solutions, Changing the World</title>
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_2ekeh9P4an8ZFgrCVK71eBnxzx4pcyod5sF8bJXXOWk.css?delta=0&amp;language=en&amp;theme=kbrcom&amp;include=eJyFUdFuwzAI_KEs-aQIx5S4sY0HOG3-fm7TVsq6ak-I4w5xx-JkJDD048TZMNvgQLFbGlxC3puEPsAomNhwTPW6Bo-8j3RTw_TSTJwGiuwgfqltMWTqqqJcYBsxOfQ7Ea_WRsvgpRaI_aPtiJkijgY0kKVjC9RNLPiUFGESVP1N6uEM1wPzxJK6C7pbHR61dzjDGlj0QFVrOegb-QP852KMmFqGvUeDELVXWPFfkjE1D2-0u5VP2tTMA-F-f2iPk9wcnL8ryrafdvugGk_LCZ-536AImWpT7kgBARIos76SfSF9zaW6GHRGf5SWMC0oP0JI3Nk" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+<link rel="stylesheet" media="all" href="/themes/custom/kbrcom/dist/css/main.css?s4hrki" />
+<link rel="manifest" href="/themes/custom/kbrcom/manifest.json" />
+<meta name="theme-color" content="#0061d2" />
+</head>
+<body class="page-type-landing-page homepage">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCMR7ZV"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+<div class="skip-to-content">
+<a href="#main-content">Skip to main content</a>
+</div>
+<header>
+<section class="header__logo-menu">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-2">
+<div class="header__logo-menu__logo">
+<a href="/">
+<img src="/themes/custom/kbrcom/images/logo-kbr-white.svg" alt="KBR logo">
+</a>
+</div>
+<a href="#" title="Open saved content" class="right-nav__pinboard primary-menu--mobile" tabindex="-1">
+<div class="pins-count--menu" style="display: none;"></div>
+<img src="/themes/custom/kbrcom/images/icon-bookmark.svg" alt>
+<img src="/themes/custom/kbrcom/images/icon-close.svg" alt>
+</a>
+</div>
+<div class="col-10">
+<div class="header__logo-menu__menu">
+<ul class="main-navigation">
+<li>
+<a href="/en/who-we-are">
+Who We Are
+</a>
+</li>
+<li>
+<a href="/en/what-we-do">
+What We Do
+</a>
+</li>
+<li>
+<a href="https://careers.kbr.com/">
+Careers
+</a>
+</li>
+<li>
+<a href="/en/insights-news">
+Insights &amp; News
+</a>
+</li>
+<li>
+<a href="https://investors.kbr.com/">
+Investor Relations
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="header__banner header__banner-homepage">
+<div class="header__video">
+<mux-player playback-id="KDVosSIrFaU2L756YEx01R00gsR9z39jW7CdWk6O01RACA" loop muted autoplay></mux-player>
+</div>
+<div class="header__banner-content-wrap">
+<div class="header__banner-content">
+<div class="container">
+<div class="row">
+<div class="col-6">
+<div class="header__banner-content-left">
+<div class="wysiwyg-text"><h1>Delivering Solutions, Changing the World<sup style="font-size:20px;font-weight:300;">®</sup></h1></div>
+</div>
+</div>
+<div class="col-6">
+<div class="header__banner-content-right">
+<div class="wysiwyg-text"><p>We deliver science, technology and engineering solutions to governments and companies around the world.</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__play-pause-button">
+<button id="play-pause"> <i class="fa-solid fa-pause"></i> </button>
+</div>
+</div>
+</div>
+<div class="header__logo-menu__logo-panel"></div>
+</header>
+<div class="right-nav">
+<div class="right-nav__triggers">
+<ul>
+<li>
+<a href="#" title="Open primary menu" class="right-nav__primary-menu primary-menu--desktop" aria-expanded="false" aria-controls="right-nav__panels">
+<img src="/themes/custom/kbrcom/images/icon-hamburger.svg" alt>
+</a>
+<a href="#" title="Open primary menu" class="right-nav__primary-menu primary-menu--mobile" tabindex="-1">
+<img src="/themes/custom/kbrcom/images/icon-hamburger.svg" alt>
+<img src="/themes/custom/kbrcom/images/icon-close.svg" alt>
+</a>
+</li>
+<li>
+<a href="#" title="Open saved content" class="right-nav__pinboard primary-menu--desktop" aria-expanded="false" aria-controls="right-nav__panels">
+<div class="pins-count--menu" style="display: none;"></div>
+<img src="/themes/custom/kbrcom/images/icon-bookmark.svg" alt>
+</a>
+</li>
+<li>
+<a href="#" title="Open language selector" class="right-nav__language primary-menu--desktop" aria-expanded="false" aria-controls="right-nav__panels">
+<img src="/themes/custom/kbrcom/images/icon-language.svg" alt>
+</a>
+<a href="#" title="Open language selector" class="right-nav__language primary-menu--mobile" tabindex="-1">
+<img src="/themes/custom/kbrcom/images/icon-language.svg" alt>
+</a>
+</li>
+<li>
+<a href="#" title="Open secondary menu" class="right-nav__secondary-menu primary-menu--desktop" aria-expanded="false" aria-controls="right-nav__panels">
+<img src="/themes/custom/kbrcom/images/icon-utility.svg" alt>
+</a>
+<a href="#" title="Open secondary menu" class="right-nav__secondary-menu primary-menu--mobile" tabindex="-1">
+<img src="/themes/custom/kbrcom/images/icon-utility.svg" alt>
+</a>
+</li>
+<li>
+<a href="#" title="Open search" class="right-nav__search primary-menu--desktop" aria-expanded="false" aria-controls="right-nav__panels">
+<img src="/themes/custom/kbrcom/images/icon-search.svg" alt>
+</a>
+<a href="#" title="Open search" class="right-nav__search primary-menu--mobile" tabindex="-1">
+<img src="/themes/custom/kbrcom/images/icon-search.svg" alt>
+</a>
+</li>
+</ul>
+<a href="#showacsb" class="accessibilityWidget">
+<img src="/themes/custom/kbrcom/images/userway.svg" alt>
+</a>
+</div>
+<div class="right-nav__targets" id="right-nav__panels">
+<a href="#" title="Close menu" class="right-nav__close" tabindex>
+<img src="/themes/custom/kbrcom/images/icon-close.svg" alt>
+</a>
+<article class="right-nav__panel" id="panel__primary-menu">
+<div class="right-nav__panel__primary-menu-container">
+<nav>
+<ul class="main-navigation">
+<li>
+<a href="/en/who-we-are">
+Who We Are
+</a>
+<button class="open-child-menu" title="Open" aria-expanded="false" aria-controls="who-we-are" type="button"></button>
+<ul>
+<li>
+<a href="/en/who-we-are/our-company">
+Our Company
+</a>
+<button class="open-child-menu" title="Open" aria-expanded="false" aria-controls="our-company" type="button"></button>
+<ul>
+<li>
+<a href="/en/who-we-are/our-company/our-history">
+Our History
+</a>
+</li>
+<li>
+<a href="/en/who-we-are/our-company/code-business-conduct">
+Code of Business Conduct
+</a>
+</li>
+<li>
+<a href="/en/who-we-are/our-company/corporate-governance">
+Corporate Governance
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/en/who-we-are/our-people">
+Our People
+</a>
+<button class="open-child-menu" title="Open" aria-expanded="false" aria-controls="our-people" type="button"></button>
+<ul>
+<li>
+<a href="/en/who-we-are/our-people/employee-resource-groups">
+Employee Resource Groups
+</a>
+</li>
+<li>
+<a href="/en/who-we-are/our-people/inclusion-and-diversity">
+Inclusion and Diversity
+</a>
+</li>
+<li>
+<a href="/en/who-we-are/our-people/technical-fellows">
+Technical Fellows
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/en/who-we-are/sustainability">
+Sustainability
+</a>
+</li>
+<li>
+<a href="/en/who-we-are/executive-leadership">
+Executive Leadership
+</a>
+</li>
+<li>
+<a href="/en/who-we-are/vision-values">
+Vision &amp; Values
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/en/what-we-do">
+What We Do
+</a>
+<button class="open-child-menu" title="Open" aria-expanded="false" aria-controls="what-we-do" type="button"></button>
+<ul>
+<li>
+<a href="/en/what-we-do/sustainable-technology-solutions">
+Sustainable Technology Solutions
+</a>
+<button class="open-child-menu" title="Open" aria-expanded="false" aria-controls="sustainable-technology-solutions" type="button"></button>
+<ul>
+<li>
+<a href="/en/what-we-do/sustainable-technology-solutions/sustainable-services">
+Sustainable Services
+</a>
+</li>
+<li>
+<a href="/en/what-we-do/sustainable-technology-solutions/sustainable-technology">
+Sustainable Technology
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/en/what-we-do/government-solutions">
+Government Solutions
+</a>
+<button class="open-child-menu" title="Open" aria-expanded="false" aria-controls="government-solutions" type="button"></button>
+<ul>
+<li>
+<a href="/en/what-we-do/government-solutions/international">
+International
+</a>
+</li>
+<li>
+<a href="/en/what-we-do/government-solutions/us">
+U.S.
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://careers.kbr.com/">
+Careers
+</a>
+</li>
+<li>
+<a href="/en/insights-news">
+Insights &amp; News
+</a>
+</li>
+<li>
+<a href="https://investors.kbr.com/">
+Investor Relations
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</article>
+<article class="right-nav__panel" id="panel__pinboard">
+<div class="right-nav__panel__pinboard-meta">
+<p>Your collection</p>
+<div class="pins-count">
+<div class="pins-count--panel"></div>
+<p>items saved</p>
+</div>
+</div>
+<div class="right-nav__panel__pinboard-container">
+<div id="pinboard-root"></div>
+<div id="pinboard"></div>
+<div class="wysiwyg-text">
+<p class="text-align-center">You haven't saved any pages yet.<br/>Click the save icon to pin pages to your collection.</p>
+</div>
+</div>
+</article>
+<article class="right-nav__panel" id="panel__language">
+<div class="right-nav__panel__language-container">
+<p class="title">Select your preferred language</p>
+<div>
+<div class="block">
+<ul class="localization--list">
+<li>
+<a href="javascript:void(0);" class="lang" lang="en">English (US)</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="lang" lang="en-au">English (AU)</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="lang" lang="en-gb">English (UK)</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="lang" lang="zh-hans">简体中文</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+<article class="right-nav__panel" id="panel__secondary-menu">
+<div class="right-nav__panel__secondary-menu-container">
+<ul>
+<li>
+<a href="/en/contact-us" class="contact-us">Contact Us</a>
+</li>
+<li>
+<a href="/en/locations" class="locations">Locations</a>
+</li>
+</ul>
+</div>
+</article>
+<article class="right-nav__panel" id="panel__search">
+<div class="right-nav__panel__search">
+<div class="panel__search-header">
+<p class="style-as-h4">Search for a subject below</p>
+</div>
+<div class="panel__search-form">
+<form action="/en/search" method="get" id="header-search-form">
+<label for="txtSearchHeader" class="sr-only">Search</label>
+<input type="search" id="txtSearchHeader" name="keywords" class="form-control" placeholder="Search topic..." data-drupal-selector="edit-search">
+<div class="form-actions">
+<input type="submit" id="edit-submit-search" value="Apply" class="button js-form-submit form-submit" data-drupal-selector="edit-submit-search">
+<img src="/themes/custom/kbrcom/images/icon-arrow-white-right.svg" alt="Search icon">
+</div>
+</form>
+</div>
+<div class="panel__search-topics">
+<p>Suggested topics:</p>
+<div class="topics-list">
+<a href="/en/search?keywords=Careers">Careers</a>
+<a href="/en/search?keywords=New%20Technology">New Technology</a>
+<a href="/en/search?keywords=Contracts">Contracts</a>
+<a href="/en/search?keywords=Experience">Experience</a>
+<a href="/en/search?keywords=Quarterly%20Report">Quarterly Report</a>
+<a href="/en/search?keywords=Press%20Release">Press Release</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+<div class="right-nav__overlay"></div>
+<main id="main-content" class="page-6">
+<div>
+<div id="block-kbrcom-content">
+<article>
+<div>
+<div>
+<div>
+<section class="paragraph paragraph--type--image-tiles paragraph--view-mode--default">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="wysiwyg-text">
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-6">
+<div class="card--image-tile">
+<div class="card--image-tile__content">
+<div class="card--image-tile__body">
+<div class="wysiwyg-text">
+<h4>Sustainable Technology Solutions</h4>
+</div>
+</div>
+<div class="card--image-tile__link">
+<a href="/en/what-we-do/sustainable-technology-solutions" class="arrow-center">
+Learn More
+</a>
+</div>
+<div class="pinnable" data-nid="2551" data-title="Sustainable Technology Solutions" data-thumbnail="/sites/default/files/2023-09/Sustainable%20Tech%20Solutions.jpg" data-path="/what-we-do/sustainable-technology-solutions" data-timestamp="1696615833">
+</div>
+<div class="card--image-tile__blur">
+<div class="blur"></div>
+</div>
+</div>
+<div class="card--image-tile__image">
+<img src="/sites/default/files/styles/image_tile/public/2023-09/Sustainable%20Tech%20Solutions_0.jpg.webp?itok=RdiKNkDh" width="960" height="540" alt="KBR employees reviewing document together" loading="lazy" />
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="card--image-tile">
+<div class="card--image-tile__content">
+<div class="card--image-tile__body">
+<div class="wysiwyg-text">
+<h4>Government Solutions</h4>
+</div>
+</div>
+<div class="card--image-tile__link">
+<a href="/en/what-we-do/government-solutions" class="arrow-center">
+Learn More
+</a>
+</div>
+<div class="pinnable" data-nid="2556" data-title="Government Solutions" data-thumbnail="/sites/default/files/2023-09/1e6e5808-76be-4316-a282-2c92145365c2.jpeg" data-path="/what-we-do/government-solutions" data-timestamp="1696343976">
+</div>
+<div class="card--image-tile__blur">
+<div class="blur"></div>
+</div>
+</div>
+<div class="card--image-tile__image">
+<img src="/sites/default/files/styles/image_tile/public/2023-09/4877f2d5-2111-4ae5-991c-41721aa28c87.jpeg.webp?itok=NnZ4MaiO" width="960" height="540" alt="Back of two KBR employees reviewing computer screens" loading="lazy" />
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div>
+<section class="paragraph paragraph--type--card-slider paragraph--view-mode--default">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="wysiwyg-text">
+<h2>Working at KBR</h2><p>We deliver a variety of solutions worldwide, from science and technology to sustainability and engineering.</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="card-slider__container">
+<div class="card-slider__slider">
+<div class="card-slider__slide">
+<h3 class="style-as-h5">Belong</h3>
+<div class="card-slider__slide__media">
+<img src="/sites/default/files/styles/slider_card/public/2023-09/Belong_resized.jpg.webp?itok=w69uf8Vg" width="360" height="450" alt="Young woman in glasses sitting at a desk" loading="lazy" />
+<a href="https://careers.kbr.com/us/en" class="arrow-center" target="_blank">
+Learn More
+</a>
+</div>
+<div class="wysiwyg-text">
+<p>A position at KBR is more than a job — it’s a chance to join a global team that’s delivering solutions that are changing the world.</p>
+</div>
+</div>
+<div class="card-slider__slide">
+<h3 class="style-as-h5">Connect</h3>
+<div class="card-slider__slide__media">
+<img src="/sites/default/files/styles/slider_card/public/2023-09/Connect_V2.jpg.webp?itok=EQT2FTvg" width="360" height="450" alt="Birdseye view of coworkers gathered around a table" loading="lazy" />
+<a href="/en/who-we-are/our-people/employee-resource-groups" class="arrow-center">
+Learn More
+</a>
+<div class="pinnable" data-nid="2506" data-title="Employee Resource Groups" data-thumbnail="/sites/default/files/2023-09/ffc15cd0-586e-4100-9010-c082c5549250.jpeg" data-path="/who-we-are/our-people/employee-resource-groups" data-timestamp="1699923407">
+</div>
+</div>
+<div class="wysiwyg-text">
+<p>KBR employee-resource groups celebrate our diverse employee population and provide opportunities to network, build relationships and engage with our communities.</p>
+</div>
+</div>
+<div class="card-slider__slide">
+<h3 class="style-as-h5">Grow</h3>
+<div class="card-slider__slide__media">
+<img src="/sites/default/files/styles/slider_card/public/2023-09/Grow.jpg.webp?itok=bWUwBfTc" width="360" height="450" alt="Coworkers gathered together in a lobby chatting" loading="lazy" />
+<a href="https://kbr.foleon.com/recruitment/opportunityawaits/" class="arrow-center" target="_blank">
+Learn More
+</a>
+</div>
+<div class="wysiwyg-text">
+<p>We’re committed to helping our people unlock their potential through learning and development opportunities. Read about these and other aspects of our culture.</p>
+</div>
+</div>
+<div class="card-slider__slide">
+<h3 class="style-as-h5">Benefits</h3>
+<div class="card-slider__slide__media">
+<img src="/sites/default/files/styles/slider_card/public/2023-09/Benefits_V2.jpg.webp?itok=mEXYu6fP" width="360" height="450" alt="Team reviewing financial document" loading="lazy" />
+<a href="https://careers.kbr.com/us/en/kbr-benefits" class="arrow-center" target="_blank">
+Learn More
+</a>
+</div>
+<div class="wysiwyg-text">
+<p>At KBR, we value our people and show it through our compelling, competitive compensation, reward and benefit packages.</p>
+</div>
+</div>
+<div class="card-slider__slide">
+<h3 class="style-as-h5">KBR Talent Community</h3>
+<div class="card-slider__slide__media">
+<img src="/sites/default/files/styles/slider_card/public/2023-09/Talent%20Community-minV2.jpg.webp?itok=TQQ1LF8L" width="360" height="450" alt="Young woman smiling with arms crossed" loading="lazy" />
+<a href="https://careers.kbr.com/us/en/jointalentcommunity" class="arrow-center" target="_blank">
+Learn More
+</a>
+</div>
+<div class="wysiwyg-text">
+<p>Sign up to join the KBR Talent Community, and we’ll keep you informed of potential opportunities to join our team of teams. Be a part of the community!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div>
+<section class="paragraph paragraph--type--card-collage paragraph--view-mode--default">
+<div class="paragraph--card-collage-component">
+<div class="container">
+<div class="row">
+<div class="col paragraph--col-1">
+<div class="paragraph--collage-wrapper">
+<div class="paragraph--collage-card paragraph--collage-onset">
+<div class="paragraph--card-text">
+<div class="paragraph--card-text-header"><h4>We Deliver</h4></div>
+<div class="wysiwyg-text"><p>We are our clients’ trusted partner. We are uncompromising in our commitment to deliver innovative, high-quality, technology-led solutions for them and exceptional, sustainable value for all our stakeholders — underpinned by strong commercial and operational discipline.</p></div>
+</div>
+<div class="paragraph--card-image">
+<video playsinline preload loop muted src="/sites/default/files/videos/2023-09/wedeliver.mp4#t=0.5" preload="metadata" width="100%" height="100%"></video>
+</div>
+</div>
+</div>
+</div>
+<div class="col paragraph--col-2">
+<div class="paragraph--collage-wrapper">
+<div class="paragraph--collage-card paragraph--col-reversed">
+<div class="paragraph--card-text">
+<div class="paragraph--card-text-header">
+<h4>We Value Our People</h4>
+</div>
+<div class="wysiwyg-text">
+<p>Our people are the heart of everything we do. We are dedicated to creating diverse and inclusive work environments in which every member of our team of teams feels safe, supported, respected, trusted and valued — and where each person is given opportunities to grow and reach their full potential.</p>
+</div>
+</div>
+<div class="paragraph--card-image">
+<video playsinline preload loop muted src="/sites/default/files/videos/2023-09/wevalueourpeople.mp4#t=0.5" preload="metadata" width="100%" height="100%"></video>
+</div>
+</div>
+<div class="paragraph--collage-card paragraph--collage-offset paragraph--col-reversed">
+<div class="paragraph--card-image">
+<video playsinline preload loop muted src="/sites/default/files/videos/2023-09/wearepeopleofintegrity.mp4#t=0.5" preload="metadata" width="100%" height="100%"></video>
+</div>
+<div class="paragraph--card-text">
+<div class="paragraph--card-text-header"><h4>We Are People of Integrity</h4></div>
+<div class="wysiwyg-text"><p>We are people of character, who value honesty, trust, courage, fairness, prudence and tenacity. We believe that doing what’s right for the planet, the communities where we live and work, and our people is good for our business. We will not sacrifice our integrity.</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col paragraph--col-3">
+<div class="paragraph--collage-wrapper paragraph--collage-override">
+<div class="paragraph--collage-description">
+<h2>Our Values</h2><p><a class="gray" href="/en/who-we-are/vision-values" data-entity-type="node" data-entity-uuid="8aff54ca-9145-41cf-802f-68e9b4f082c5" data-entity-substitution="canonical" title="Vision &amp; Values">Learn More</a></p>
+</div>
+<div class="paragraph--collage-card">
+<div class="paragraph--card-image">
+<video playsinline preload loop muted src="/sites/default/files/videos/2023-09/weareateamofteams.mp4#t=0.5" preload="metadata" width="100%" height="100%"></video>
+</div>
+<div class="paragraph--card-text">
+<div class="paragraph--card-text-header"><h4>We Are a Team of Teams</h4></div>
+<div class="wysiwyg-text"><p>We have a will to succeed, individually and as a company, but we value the achievements of our team of teams over our individual accomplishments. Our collective focus powers our operational excellence, fuels our passion for delivering for our customers, and makes us a better, stronger, more effective and efficient company. We are ONE KBR.</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col paragraph--col-4">
+<div class="paragraph--collage-wrapper">
+<div class="paragraph--collage-card paragraph--collage-onset">
+<div class="paragraph--card-image">
+<video playsinline preload loop muted src="/sites/default/files/videos/2023-09/weempower.mp4#t=0.5" preload="metadata" width="100%" height="100%"></video>
+</div>
+<div class="paragraph--card-text">
+<div class="paragraph--card-text-header"><h4>We Empower</h4></div>
+<div class="wysiwyg-text"><p>We empower all our people with a shared purpose, the right tools, and the supportive culture they need to be proactive, to be adaptive to change and to succeed. We trust them to be independent decision-makers who aren’t afraid to meet any challenge head-on and who proudly own their work.</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+<div>
+<section class="paragraph paragraph--type--card-slider paragraph--view-mode--default">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="wysiwyg-text">
+<h2>Our Passions</h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="card-slider__container">
+<div class="card-slider__slider">
+<div class="card-slider__slide">
+<h3 class="style-as-h5">Sustainability</h3>
+<div class="card-slider__slide__media">
+<img src="/sites/default/files/styles/slider_card/public/2023-09/Sustainability.jpeg.webp?itok=sE8CYJPW" width="360" height="450" alt="People wearing KBR One Ocean shirts at the beach" loading="lazy" />
+<a href="/en/who-we-are/sustainability" class="arrow-center">
+Learn More
+</a>
+<div class="pinnable" data-nid="2411" data-title="Sustainability" data-thumbnail="/sites/default/files/2023-09/Sustainability.jpeg" data-path="/who-we-are/sustainability" data-timestamp="1700106043">
+</div>
+</div>
+<div class="wysiwyg-text">
+</div>
+</div>
+<div class="card-slider__slide">
+<h3 class="style-as-h5">Inclusion and Diversity</h3>
+<div class="card-slider__slide__media">
+<img src="/sites/default/files/styles/slider_card/public/2023-09/a408bcf1-997e-4e43-963c-f3ebb8782ca2.jpeg.webp?itok=QsOleINO" width="360" height="450" alt="KBR employees posed for a group photo" loading="lazy" />
+<a href="/en/who-we-are/our-people/inclusion-and-diversity" class="arrow-center">
+Learn More
+</a>
+<div class="pinnable" data-nid="2516" data-title="Inclusion and Diversity" data-thumbnail="/sites/default/files/2023-09/8d314245-3228-4102-8c98-bd20d16f9b80.jpeg" data-path="/who-we-are/our-people/inclusion-and-diversity" data-timestamp="1695935009">
+</div>
+</div>
+<div class="wysiwyg-text">
+</div>
+</div>
+<div class="card-slider__slide">
+<h3 class="style-as-h5">Community Involvement</h3>
+<div class="card-slider__slide__media">
+<img src="/sites/default/files/styles/slider_card/public/2023-09/Homepage%20-%20Community.jpg.webp?itok=uRthngea" width="360" height="450" alt="KBR employees with the KBR flag at the Houston Food Bank" loading="lazy" />
+<a href="/en/who-we-are/sustainability/community-involvement" class="arrow-center">
+Learn More
+</a>
+<div class="pinnable" data-nid="2406" data-title="Community Involvement" data-thumbnail="/sites/default/files/2023-09/Committed%20to%20Our%20Communities.jpeg" data-path="/who-we-are/sustainability/community-involvement" data-timestamp="1699936080">
+</div>
+</div>
+<div class="wysiwyg-text">
+</div>
+</div>
+<div class="card-slider__slide">
+<h3 class="style-as-h5">Culture</h3>
+<div class="card-slider__slide__media">
+<img src="/sites/default/files/styles/slider_card/public/2023-09/Homepage%20-%20Culture.jpg.webp?itok=W-d3pKkE" width="360" height="450" alt="KBR employees with the KBR flag at a Houston Astros game" loading="lazy" />
+<a href="/en/who-we-are/our-people" class="arrow-center">
+Learn More
+</a>
+<div class="pinnable" data-nid="2511" data-title="Our People" data-thumbnail="/sites/default/files/2023-09/88509a3f-b84d-44db-833e-6c8e763fc7eb%20%281%29.jpeg" data-path="/who-we-are/our-people" data-timestamp="1695933616">
+</div>
+</div>
+<div class="wysiwyg-text">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div> <div class="paragraph paragraph--type--dynamic-content paragraph--view-mode--default">
+<div><div id="block-latestinsightsblock">
+<div class="views--latest-insights">
+<div class="container">
+<div class="row">
+<div class="col text-align-center">
+<h2>Latest Insights & News</h2>
+</div>
+</div>
+<div class="row d-flex justify-content-center">
+<div class="col-9 insight-news-col">
+<div class="insight-news-parent">
+<div class="insight-news-image"></div>
+<div class="insight-news-blur"></div>
+<div class="insight-news-content">
+<p>20 Nov 2023</p>
+<p>Stories</p>
+<a class="white-link-style" href="/en/insights-news/stories/kbrs-ceo-award-hsse-excellence"><h4>KBR’s CEO Award for HSSE Excellence</h4></a>
+</div>
+<div class="insight-news-read-more-container">
+<a class="insight-news-read-more" href="/en/insights-news/stories/kbrs-ceo-award-hsse-excellence">Read More</a>
+</div>
+<div class="pinnable-container">
+<div class="pinnable" data-nid="9421" data-title="KBR’s CEO Award for HSSE Excellence" data-thumbnail="/sites/default/files/2023-11/kbr-ceo-hsse-excellence-award-winner-james-asher-cake.png" data-path="/insights-news/stories/kbrs-ceo-award-hsse-excellence" data-timestamp="1700526699">
+</div>
+</div>
+</div>
+</div>
+<div class="col-9 insight-news-col">
+<div class="insight-news-parent">
+<div class="insight-news-image"></div>
+<div class="insight-news-blur"></div>
+<div class="insight-news-content">
+<p>21 Nov 2023</p>
+<p>Press Release</p>
+<a class="white-link-style" href="/en/insights-news/press-release/kbr-wins-gold-2023-viddy-awards"><h4>KBR Wins Gold in 2023 Viddy Awards </h4></a>
+</div>
+<div class="insight-news-read-more-container">
+<a class="insight-news-read-more" href="/en/insights-news/press-release/kbr-wins-gold-2023-viddy-awards">Read More</a>
+</div>
+<div class="pinnable-container">
+<div class="pinnable" data-nid="9426" data-title="KBR Wins Gold in 2023 Viddy Awards " data-thumbnail="/sites/default/files/2023-09/Backup%20Pinboard%20Image%20V2.png" data-path="/insights-news/press-release/kbr-wins-gold-2023-viddy-awards" data-timestamp="1700577775">
+</div>
+</div>
+</div>
+</div>
+<div class="col-9 insight-news-col">
+<div class="insight-news-parent">
+<div class="insight-news-image"></div>
+<div class="insight-news-blur"></div>
+<div class="insight-news-content">
+<p>20 Jul 2023</p>
+<p>Thought Leadership</p>
+<a class="white-link-style" href="/en/insights-news/thought-leadership/kbr-recognized-globally-great-workplace"><h4>KBR Recognized Globally as a Great Workplace </h4></a>
+</div>
+<div class="insight-news-read-more-container">
+<a class="insight-news-read-more" href="/en/insights-news/thought-leadership/kbr-recognized-globally-great-workplace">Read More</a>
+</div>
+<div class="pinnable-container">
+<div class="pinnable" data-nid="8906" data-title="KBR Recognized Globally as a Great Workplace " data-thumbnail="/sites/default/files/2023-09/americas-greatest-workplaces-2023-plant-a-insights-group-newsweek.png" data-path="/insights-news/thought-leadership/kbr-recognized-globally-great-workplace" data-timestamp="1696275438">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col text-align-center">
+<a class="white m-3" href="/en/insights-news">
+View all News & Insights
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div id="block-kbrcom-kbrlanguagesplashpage">
+<div class="block">
+<div class="block__content">
+<div id="language-picker-prompt-wrapper" style="display: none;">
+<div class="content-wrapper">
+<img src="/modules/custom/kbr_language/images/kbr-logo-color.svg" alt="KBR logo" />
+<p><strong>Welcome to KBR.com<br>Please select your preferred language.</strong></p>
+<ul id="ul--language-picker-list">
+<li lang="zh-hans">
+<a lang="zh-hans">
+<img alt="简体中文" src="/sites/default/files/lang_icons/CHI_0_0.png" lang="zh-hans" />
+<span lang="zh-hans">简体中文</span>
+</a>
+</li>
+<li lang="en">
+<a lang="en">
+<img alt="English (US)" src="/sites/default/files/lang_icons/US_0.png" lang="en" />
+<span lang="en">English (US)</span>
+</a>
+</li>
+<li lang="en-au">
+<a lang="en-au">
+<img alt="English (AU)" src="/sites/default/files/lang_icons/AUS_0.png" lang="en-au" />
+<span lang="en-au">English (AU)</span>
+</a>
+</li>
+<li lang="en-gb">
+<a lang="en-gb">
+<img alt="English (UK)" src="/sites/default/files/lang_icons/UK_0.png" lang="en-gb" />
+<span lang="en-gb">English (UK)</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer role="contentinfo">
+<div class="container">
+<div class="row">
+<div class="col-8">
+<div class="footer__kbr-logo">
+<a href>
+<img src="/themes/custom/kbrcom/images/logo-kbr-white.svg" alt="KBR logo">
+</a>
+</div>
+</div>
+<div class="col-4">
+<div class="footer__stockfeed">
+<div id="block-kbrcom-kbrstockfeedblock">
+<div id="stockfeed">
+<p class="stockfeed--top">
+NYSE: KBR <span id="stockfeed-price"></span>
+</p>
+<p class="stockfeed--bottom">
+<span id="stockfeed-date"></span> Pricing delayed 20 minutes.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__center">
+<div class="row justify-content-between">
+<div class="col-5">
+<div class="footer__webform">
+<div id="block-kbrcom-webform">
+<span id="webform-submission-kbr-newsletter-node-6-form-ajax-content"></span><div id="webform-submission-kbr-newsletter-node-6-form-ajax" class="webform-ajax-form-wrapper" data-effect="fade" data-progress-type="throbber"><form class="webform-submission-form webform-submission-add-form webform-submission-kbr-newsletter-form webform-submission-kbr-newsletter-add-form webform-submission-kbr-newsletter-node-6-form webform-submission-kbr-newsletter-node-6-add-form js-webform-details-toggle webform-details-toggle" data-drupal-selector="webform-submission-kbr-newsletter-node-6-add-form" action="/en" method="post" id="webform-submission-kbr-newsletter-node-6-add-form" accept-charset="UTF-8">
+<div id="edit-form-heading" class="js-form-item form-item js-form-type-webform-markup form-item-form-heading js-form-item-form-heading form-no-label">
+<h3>Join Our Newsletter</h3><p>Keep up with the latest from KBR.</p>
+</div>
+<div class="form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-form-group" id="edit-form-group"><div class="js-form-item form-item js-form-type-email form-item-email-address js-form-item-email-address">
+<label for="edit-email-address" class="js-form-required form-required">Email address</label>
+<input class="form-control form-email required" autocomplete="off" data-webform-required-error="An email address is required." data-drupal-selector="edit-email-address" type="email" id="edit-email-address" name="email_address" value size="60" maxlength="254" placeholder="Email address" required="required" aria-required="true" />
+</div>
+<div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions"><input class="webform-button--submit button button--primary js-form-submit form-submit" data-drupal-selector="edit-actions-submit" data-disable-refocus="true" type="submit" id="edit-actions-submit" name="op" value="Submit" />
+</div>
+</div>
+<input autocomplete="off" data-drupal-selector="form-khekemp918espsobr-nw1ux6nfx42ags87josi-z7m8" type="hidden" name="form_build_id" value="form-KHEkemp918eSPSoBr-NW1ux6nFX42agS87JoSi_z7M8" />
+<input data-drupal-selector="edit-webform-submission-kbr-newsletter-node-6-add-form" type="hidden" name="form_id" value="webform_submission_kbr_newsletter_node_6_add_form" />
+<div class="url-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="js-form-item form-item js-form-type-textfield form-item-url js-form-item-url">
+<label for="edit-url">Leave this field blank</label>
+<input autocomplete="off" data-drupal-selector="edit-url" type="text" id="edit-url" name="url" value size="20" maxlength="128" class="form-text" />
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="col-7">
+<div class="row">
+<div class="col-4">
+<div class="footer__menu">
+<h4 class="style-as-h6">Company</h4>
+<ul>
+<li>
+<a href="/en/press-resources" data-drupal-link-system-path="node/2496">Press Resources</a>
+</li>
+<li>
+<a href="/en/special-immigration-visa-siv-applicants" data-drupal-link-system-path="node/2491">Special Immigration Visa (SIV) Applicants</a>
+</li>
+<li>
+<a href="/en/employment" data-drupal-link-system-path="node/2426">Employment</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-4">
+<div class="footer__menu">
+<h4 class="style-as-h6">Legal</h4>
+<ul>
+<li>
+<a href="/en/accessibility" data-drupal-link-system-path="node/2431">Accessibility</a>
+</li>
+<li>
+<a href="/en/privacy-policy" data-drupal-link-system-path="node/2436">Privacy Policy</a>
+</li>
+<li>
+<a href="/en/terms-use" data-drupal-link-system-path="node/2441">Terms of Use</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-4">
+<div class="footer__menu">
+<h4 class="style-as-h6">Privacy</h4>
+<ul>
+<li>
+<a href="/en/contracts" data-drupal-link-system-path="node/2486">Contracts</a>
+</li>
+<li>
+<a href="/en/employee-tools" data-drupal-link-system-path="node/9201">Employee Tools</a>
+</li>
+<li>
+<a href="https://kbrsupplier.com/">Suppliers</a>
+</li>
+<li>
+<a href="/en/sitemap" data-drupal-link-system-path="node/1001">Sitemap</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row align-items-end">
+<div class="col-8">
+<div class="footer__copyright-social-media">
+<p class="copyright small mobile-hide">&copy; 2023 KBR Inc. All rights reserved.</p>
+<ul>
+<li>
+<a href="https://www.linkedin.com/company/kbr-inc/" title="LinkedIn" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/kbr.inc/" title="Instagram" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCON5pA5ECVwteH4g80r51BA/featured" title="YouTube" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-youtube"></i>
+</a>
+</li>
+<li>
+<a href="https://x.com/KBRincorporated" title="X" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/KBRincorporated/" title="Facebook" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-square-facebook"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-4">
+<div class="footer__zero-harm-logo">
+<a href="/who-we-are/esg/zero-harm" title="Zero Harm: Courage to care">
+<img src="/themes/custom/kbrcom/images/logo-zero-harm-white.svg" alt="Zero Harm logo">
+</a>
+</div>
+</div>
+</div>
+</div>
+<a class="back-to-top" href="#" title="Back to top">
+<img src="/themes/custom/kbrcom/images/icon-angle-up-white.svg" alt>
+</a>
+</footer>
+</div>
+<script type="c566ae2d385892744e10c0bd-text/javascript">(function(d){var s = d.createElement("script");s.setAttribute("data-account", "SzWvUPnVzU");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
+<div id="cookiePrompt">
+Cookie Policy
+</div> <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/6","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NCMR7ZV"]},"gtag":{"tagId":"","otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"core\/internal.jquery.form,extlink\/drupal.extlink,google_tag\/gtag,google_tag\/gtag.ajax,google_tag\/gtm,kbr_gated_content\/base,kbr_language\/base,kbr_language\/picker,kbr_pin\/base,kbr_stockfeed\/base,kbrcom\/global-styling,media_remote_muxvideo\/base,paragraphs\/drupal.paragraphs.unpublished,system\/base,userway_embed\/base,webform\/webform.ajax,webform\/webform.element.details.save,webform\/webform.element.details.toggle,webform\/webform.element.message,webform\/webform.form","theme":"kbrcom","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/en\/homepage?ajax_form=1":true},"kbr_gated_content":{"selector":"a.gated-content","path":"\/en\/form\/sitewide-gated-content-form"},"userway_embed":{"custom_trigger":"#accessibilityWidget","custom_trigger_selector":"a[href=\u0022#showacsb\u0022]"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"ajax":{"edit-actions-submit":{"callback":"::submitAjaxForm","event":"click","effect":"fade","speed":500,"progress":{"type":"throbber","message":""},"disable-refocus":true,"url":"\/en\/homepage?ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Submit"}}},"user":{"uid":0,"permissionsHash":"73c43b4aa8304b0841b0f95c52922e45364b151c8df92bfd6b47b003fd33706d"}}</script>
+<script src="/sites/default/files/js/js_tXAUMduf3v0lobAn9HO4UFXLFI3BbxwGBz4wEOHUbkA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=kbrcom&amp;include=eJyFUdFuwzAI_KEs-aQIx5S4sY0HOG3-fm7TVsq6ak-I4w5xx-JkJDD048TZMNvgQLFbGlxC3puEPsAomNhwTPW6Bo-8j3RTw_TSTJwGiuwgfqltMWTqqqJcYBsxOfQ7Ea_WRsvgpRaI_aPtiJkijgY0kKVjC9RNLPiUFGESVP1N6uEM1wPzxJK6C7pbHR61dzjDGlj0QFVrOegb-QP852KMmFqGvUeDELVXWPFfkjE1D2-0u5VP2tTMA-F-f2iPk9wcnL8ryrafdvugGk_LCZ-536AImWpT7kgBARIos76SfSF9zaW6GHRGf5SWMC0oP0JI3Nk" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script src="/modules/custom/kbr_pin/js/dist/pinboard.bundle.js?v=10.1.6" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mux/mux-player" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script src="/sites/default/files/js/js_LP_u1G1Se0f4lt-cxwPktbKkCEZL0iKC8qhSXeAn_qs.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=kbrcom&amp;include=eJyFUdFuwzAI_KEs-aQIx5S4sY0HOG3-fm7TVsq6ak-I4w5xx-JkJDD048TZMNvgQLFbGlxC3puEPsAomNhwTPW6Bo-8j3RTw_TSTJwGiuwgfqltMWTqqqJcYBsxOfQ7Ea_WRsvgpRaI_aPtiJkijgY0kKVjC9RNLPiUFGESVP1N6uEM1wPzxJK6C7pbHR61dzjDGlj0QFVrOegb-QP852KMmFqGvUeDELVXWPFfkjE1D2-0u5VP2tTMA-F-f2iPk9wcnL8ryrafdvugGk_LCZ-536AImWpT7kgBARIos76SfSF9zaW6GHRGf5SWMC0oP0JI3Nk" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script src="/themes/custom/kbrcom/dist/main.bundle.js?s4hrki" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script src="/sites/default/files/js/js_tSjV8R1-57URQ2Mmxv-7qcgznvmX9pMMt4VxacAK20U.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=kbrcom&amp;include=eJyFUdFuwzAI_KEs-aQIx5S4sY0HOG3-fm7TVsq6ak-I4w5xx-JkJDD048TZMNvgQLFbGlxC3puEPsAomNhwTPW6Bo-8j3RTw_TSTJwGiuwgfqltMWTqqqJcYBsxOfQ7Ea_WRsvgpRaI_aPtiJkijgY0kKVjC9RNLPiUFGESVP1N6uEM1wPzxJK6C7pbHR61dzjDGlj0QFVrOegb-QP852KMmFqGvUeDELVXWPFfkjE1D2-0u5VP2tTMA-F-f2iPk9wcnL8ryrafdvugGk_LCZ-536AImWpT7kgBARIos76SfSF9zaW6GHRGf5SWMC0oP0JI3Nk" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?s4hrki" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?s4hrki" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script src="/sites/default/files/js/js_xVfcq0dBFSomxqN4MaOkHTHIxEsLf3obl6qwSAEktTA.js?scope=footer&amp;delta=9&amp;language=en&amp;theme=kbrcom&amp;include=eJyFUdFuwzAI_KEs-aQIx5S4sY0HOG3-fm7TVsq6ak-I4w5xx-JkJDD048TZMNvgQLFbGlxC3puEPsAomNhwTPW6Bo-8j3RTw_TSTJwGiuwgfqltMWTqqqJcYBsxOfQ7Ea_WRsvgpRaI_aPtiJkijgY0kKVjC9RNLPiUFGESVP1N6uEM1wPzxJK6C7pbHR61dzjDGlj0QFVrOegb-QP852KMmFqGvUeDELVXWPFfkjE1D2-0u5VP2tTMA-F-f2iPk9wcnL8ryrafdvugGk_LCZ-536AImWpT7kgBARIos76SfSF9zaW6GHRGf5SWMC0oP0JI3Nk" type="c566ae2d385892744e10c0bd-text/javascript"></script>
+<script type="c566ae2d385892744e10c0bd-text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9edcce528a","applicationID":"1102021272","transactionName":"Z1xaZEUAWkVTWkRfCV4WeVNDCFtYHUlRUQNvWllTXwQ=","queueTime":9,"applicationTime":66,"atts":"SxtNEg0aSRoQWBIMHU1E","errorBeacon":"bam.nr-data.net","agent":""}</script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c566ae2d385892744e10c0bd-|49" defer></script></body>
+</html>
